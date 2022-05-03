@@ -8,10 +8,17 @@ public class Cat : Enemy
 {
     private void Start()
     {
+        //ABSTRACTION
+        SetVariable();    
+    }
+    
+    //ABSTRACTION
+    private void SetVariable()
+    {
         poruka = "Cat";
         childObject = gameObject.transform.GetChild(0).gameObject;
         color = Color.green;
-        RefreshAll();
+        jumpForce = 5f;
     }
-    
+
 }
